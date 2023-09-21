@@ -1,0 +1,42 @@
+programa{
+	funcao inicio()	{
+		real tot=0.00
+		inteiro opc
+				escreva("Lanchonete Patrik\n\n")
+		faca{
+	
+			escreva("Cardapio\n\n")			
+			escreva("  1 -> X-Salada R$ 30\n")
+			escreva("  2 -> X-Bacon R$ 25\n")
+			escreva("  3 -> X-Egg R$ 18\n")			
+      escreva("  4 -> Refrigerante R$ 5\n")
+			escreva("  5 -> Finalizar pedido\n")
+			escreva("Digite seu pedido: ")
+			leia(opc)
+			escolha (opc){
+				caso 1: 
+        tot=tot+30.00
+			 	pare
+			 	
+			 	caso 2: 
+        tot=tot+25.00
+			 	pare
+			 	
+			 	caso 3: 
+			 		        tot=tot+18.00
+			 	pare
+
+        caso 4: 
+        tot=tot+5.00
+			 	pare
+			 	
+			 	caso 5: 
+			 		       escreva("\n\n****Pedido Finalizado. O valor total é: ", tot)
+			 	pare
+			 	
+			 	caso contrario:
+			 escreva("Informe um código correto\n\n")
+			}			 
+		}		enquanto(opc != 5)
+	}
+}
